@@ -1,3 +1,4 @@
+Copyright The Financial Times Limited [All Rights Reserved]
 Copyright (c) 2013, Microsoft Corporation
 This software is released under the MIT license; 
 you may not use the software except in compliance with the License. You 

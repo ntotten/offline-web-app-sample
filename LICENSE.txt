@@ -1,3 +1,4 @@
+Copyright The Financial Times Limited [All Rights Reserved]
 Copyright (c) 2013, Microsoft Corporation
 
 Permission is hereby granted, free of charge, to any person obtaining
