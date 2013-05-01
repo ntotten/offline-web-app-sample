@@ -1,0 +1,26 @@
+﻿@model List<OfflineAppSample.Models.Article>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model.Count == 0)
+{
+    <p><i>No articles have been found, maybe you haven't <b>refreshed the news</b>?</i></p>
+}
+else
+{
+    <button id="refreshButton">Refresh the news!</button>
+    <div id="headlines">
+        <ul>
+            @foreach (var article in Model)
+            {
+                <li>
+                    <a href="@Url.Action("Index", new { id = article.Id })"><b>@article.Headline</b><br />
+                        By @article.Author  on @String.Format("{0:u}Z", article.Date).</a>
+                </li>
+            }
+        </ul>
+    </div>
+
+}

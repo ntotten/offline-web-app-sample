@@ -1,0 +1,10 @@
+﻿@model OfflineAppSample.Models.Article
+
+@{
+    ViewBag.Title = "Article";
+}
+
+@Html.ActionLink("Go back home", "Index")
+<h2>@Model.Headline</h2>
+<h3>By @Model.Author  on @Model.Date</h3>
+@Html.Raw(Model.Body)

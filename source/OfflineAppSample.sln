@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfflineAppSample", "OfflineAppSample\OfflineAppSample.csproj", "{2DF85D56-152A-4F48-A057-85CFDE73F2F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F4750C77-27C8-492F-99AB-4E2E2218BD63}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE.txt = ..\LICENSE.txt
+		..\NOTICE.txt = ..\NOTICE.txt
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DF85D56-152A-4F48-A057-85CFDE73F2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF85D56-152A-4F48-A057-85CFDE73F2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF85D56-152A-4F48-A057-85CFDE73F2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF85D56-152A-4F48-A057-85CFDE73F2F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
