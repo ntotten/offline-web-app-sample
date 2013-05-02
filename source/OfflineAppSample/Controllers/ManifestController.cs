@@ -17,7 +17,7 @@ namespace OfflineAppSample.Controllers
         {
             var sb = new StringBuilder();
             sb.AppendLine("CACHE MANIFEST");
-            sb.AppendLine(Scripts.Render("~/bundles/jquery").ToString().Replace("<script src=\"", "").Replace("\"></script>", ""));
+            sb.AppendLine("/Scripts/jquery-2.0.0.min.js");
             sb.AppendLine();
             sb.AppendLine("FALLBACK:");
             sb.AppendLine("/api /offline");

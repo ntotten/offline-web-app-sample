@@ -15,12 +15,12 @@ namespace OfflineAppSample
         public List<Article> Get()
         {
             SyndicationItem[] items;
-            using (var reader = XmlReader.Create("http://feeds2.feedburner.com/ft/tech-blog"))
+            using (var reader = XmlReader.Create("http://blogs.msdn.com/b/windowsazure/rss.aspx?Tags=windows+azure/"))
             {
                 var feed = SyndicationFeed.Load(reader);
                 items = feed.Items.ToArray();
             }
-            var articles = items.Select(a => new Article
+            var articles = items.Take(10).Select(a => new Article
             {
                 Id = a.Id,
                 Headline = a.Title.Text,
