@@ -32,7 +32,7 @@ APP.network = (function () {
 	function selectOne(model, id, successCallback, failureCallback) {
 		$.ajax({
 			dataType: 'json',
-			url: 'api/' + model + '/?id=' + id,
+			url: 'api/' + model + '/' + id,
 			success: successCallback || function () {},
 			type: 'GET',
 			error: failureCallback || function () {}

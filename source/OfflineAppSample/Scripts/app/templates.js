@@ -2,7 +2,7 @@ APP.templates = (function () {
     'use strict';
 
     function application() {
-        return '<div id="window"><div id="header"><h1>FT Tech Blog</h1></div><div id="body"></div></div>';
+        return '<div id="window"><div id="header"><h1>Windows Azure Blog</h1></div><div id="body"></div></div>';
     }
 
     function home() {
@@ -19,7 +19,7 @@ APP.templates = (function () {
         
         for (i = 0, l = articles.length; i < l; i = i + 1) {
             
-            output = output + '<li><a href="' + APP_ROOT + '?id=' + encodeURIComponent(articles[i].id) + '"><b>' + articles[i].headline + '</b><br />By ' + articles[i].author + ' on ' + articles[i].date + '</a></li>';
+            output = output + '<li><a href="' + APP_ROOT + articles[i].id + '"><b>' + articles[i].headline + '</b><br />By ' + articles[i].author + ' on ' + articles[i].date + '</a></li>';
         }
         return '<ul>' + output + '</ul>';
     }

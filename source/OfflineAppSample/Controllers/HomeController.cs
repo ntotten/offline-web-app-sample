@@ -34,5 +34,11 @@ namespace OfflineAppSample.Controllers
                 return View("Article", article);
             }
         }
+
+        public ActionResult Offline()
+        {
+            return Content("offline");
+        }
+
     }
 }

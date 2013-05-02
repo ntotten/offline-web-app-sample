@@ -11,20 +11,20 @@ using System.Xml.Linq;
 
 namespace OfflineAppSample.Api
 {
-    public class ArticleController : ApiController
+    public class ArticlesController : ApiController
     {
         SyndicationService _service = new SyndicationService();
 
-        // GET api/article
+        // GET api/articles
         public IEnumerable<Article> Get()
         {
             return _service.Get();
         }
 
-        // GET api/article/5
-        public Article Get(string sid)
+        // GET api/articles/5
+        public Article Get(string id)
         {
-            return _service.Get(sid);
+            return _service.Get(id);
         }
 
     }

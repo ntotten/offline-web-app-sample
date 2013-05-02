@@ -54,7 +54,7 @@
                 // Otherwise, download resources, eval them, if successful push them into local storage.
             } else {
                 $.ajax({
-                    url: '@Url.Action("Index", "Offline")',
+                    url: '@Url.Action("Offline", "Home")',
                     success: startWithOnlineResources,
                     error: startWithOfflineResources,
                     dataType: 'json'

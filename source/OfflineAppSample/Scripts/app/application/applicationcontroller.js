@@ -42,12 +42,13 @@ APP.applicationController = (function () {
             page = '';
         }
         if (page.length > 0) {
-            if (parseInt(page, 10) > 0) {
-                showArticle(parseInt(page, 10));
-            } else {
-                pageNotFound();
-                page = APP_ROOT + 'error';
-            }
+            showArticle(page);
+            //if (parseInt(page, 10) > 0) {
+            //    showArticle(parseInt(page, 10));
+            //} else {
+            //    pageNotFound();
+            //    page = APP_ROOT + 'error';
+            //}
         } else {
             showHome();
         }
@@ -146,7 +147,7 @@ APP.applicationController = (function () {
     }
 
     function startFromServer() {
-
+        
         // As a bare minimum we need History API to
         // run the advanced features of this app
         if (!historyAPI()) return;

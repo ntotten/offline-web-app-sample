@@ -22,7 +22,7 @@ namespace OfflineAppSample
             }
             var articles = items.Take(10).Select(a => new Article
             {
-                Id = a.Id,
+                Id = a.Id.Split(':')[1],
                 Headline = a.Title.Text,
                 Date = a.PublishDate.UtcDateTime,
                 Body = a.Summary.Text,
