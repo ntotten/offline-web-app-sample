@@ -27,7 +27,7 @@ APP.appcache = (function () {
 		document.cookie = "appcacheUpdate=1;expires=" + cookieExpires.toGMTString();
 		var iframe = document.createElement('IFRAME');
 		iframe.setAttribute('style', 'width:0px; height:0px; visibility:hidden; position:absolute; border:none');
-		iframe.src = APP_ROOT + 'manifest';
+		iframe.src = APP_ROOT + 'manifest.html';
 		iframe.id = 'appcacheloader';
 		document.body.appendChild(iframe);
 	}

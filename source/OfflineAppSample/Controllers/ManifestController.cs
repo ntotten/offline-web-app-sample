@@ -20,7 +20,7 @@ namespace OfflineAppSample.Controllers
             sb.AppendLine("/Scripts/jquery-2.0.0.min.js");
             sb.AppendLine();
             sb.AppendLine("FALLBACK:");
-            sb.AppendLine("/api /offline");
+            sb.AppendLine("/api /home/offline");
             sb.AppendLine("/ /");
             sb.AppendLine();
             sb.AppendLine("NETWORK:");
