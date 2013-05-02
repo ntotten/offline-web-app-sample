@@ -1,0 +1,11 @@
+﻿CACHE MANIFEST
+#2012-05-02v1
+
+/Scripts/jquery-2.0.0.min.js
+
+FALLBACK:
+/api /offline.html
+/ /
+
+NETWORK:
+*

@@ -133,7 +133,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManifestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +144,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="manifest.html" />
+    <Content Include="offline.html" />
     <Content Include="Scripts\app\appcache.js" />
     <Content Include="Scripts\app\application\applicationcontroller.js" />
     <Content Include="Scripts\app\articles\article.js" />
@@ -154,6 +154,7 @@
     <Content Include="Scripts\app\datastores\websql.js" />
     <Content Include="Scripts\app\templates.js" />
     <Content Include="Scripts\fastclick.js" />
+    <Content Include="manifest.appcache" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />

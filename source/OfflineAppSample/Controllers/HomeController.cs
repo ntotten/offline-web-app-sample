@@ -35,10 +35,5 @@ namespace OfflineAppSample.Controllers
             }
         }
 
-        public ActionResult Offline()
-        {
-            return Content("offline");
-        }
-
     }
 }
